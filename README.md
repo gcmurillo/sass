@@ -9,7 +9,6 @@ Para instalar Sass en sistemas basados en Unix, ejecute:
 ```bash
 $ sudo apt install ruby-sass
 ```
-Para conocer un poco más sobre [**npm**](https://docs.npmjs.com/about-npm/)
 
 ## SASS
 ### Variables
