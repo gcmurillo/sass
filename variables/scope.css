@@ -1,0 +1,14 @@
+.content {
+  global: global value;
+  local: local value; }
+
+.sidebar {
+  global: global value; }
+
+.alert {
+  value: local value; }
+
+.other {
+  value: global value; }
+
+/*# sourceMappingURL=scope.css.map */

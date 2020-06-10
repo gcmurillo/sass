@@ -1,0 +1,15 @@
+$font-stack: Helvetica,sans-serif;
+$primary-color: #333;
+
+$base-color: #c6538c;
+$border-dark: rgba($base-color, 0.88);
+
+
+body  {
+    font: 100% $font-stack; 
+    color: $primary-color;
+}
+
+.alert {
+    border: 1px solid $border-dark;
+}
