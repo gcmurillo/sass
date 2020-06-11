@@ -10,6 +10,11 @@ Para instalar Sass en sistemas basados en Unix, ejecute:
 $ sudo apt install ruby-sass
 ```
 
+O Para Mac, Windows o Linux usando [npm](https://docs.npmjs.com/about-npm/)
+```
+npm -g install sass  
+```
+
 ## SASS
 ### Variables
 El uso de variables es simple, es como en cualquier otro lenguaje. Colocas nombre a la variable, y le asignas cierto valor. Simple. En Sass, el nombre de las variables inician con `$`. Luego de asignarles cierto valor, este puede ser usado en cualquier parte del documento.
@@ -36,18 +41,21 @@ body  {
 Para procesar el documento `scss` (o `sass`, cuyas diferencias es el uso de `{}` y `;`), debe ejecutar:
 
 ```bash
-$ sass --watch var.scss
+$ sass --watch var.scss var.css
 ```
-El flag `--watch` permitirá que cada vez que se modifique el archivo **scss** se genere un nuevo css automaticamente.
+El flag `--watch` permitirá que cada vez que se modifique el archivo *scss* se genere un nuevo *css* automaticamente. Se presentará una pantalla como esta:
+
+![imagen_var][var]
 
 ```css
 /* css: archivo var.css*/
 body {
   font: 100% Helvetica, sans-serif;
-  color: #333; }
+  color: #333;
+}
 
 .alert {
-  border: 1px solid rgba(198, 83, 140, 0.88); 
+  border: 1px solid rgba(198, 83, 140, 0.88);
 }
 ```
 
@@ -71,6 +79,10 @@ $global-variable: global value;
   // local: $local-variable;
 }
 ```
+
+Para procesar:
+
+![scope_img][scope]
 
 ```css
 /* css: scope.css */
@@ -134,20 +146,24 @@ nav {
 }
 ```
 
+Para procesar:
+
+![nesting_img][nesting]
+
 ```css 
 /* css: nesting.css */
 nav ul {
   margin: 0;
   padding: 0;
-  list-style: none; 
+  list-style: none;
 }
 nav li {
-  display: inline-block; 
+  display: inline-block;
 }
 nav a {
   display: block;
   padding: 6px 12px;
-  text-decoration: none; 
+  text-decoration: none;
 }
 ```
 
@@ -187,25 +203,30 @@ Esta es una de las más útiles funcionalidades de Sass. *@extend* nos permite c
 }
 ```
 
+Para procesar:
+
+![extend_img][extend]
+
 ```css
 /* css: extend.css */
-.message, .success, .error, .warning {
+.warning, .error, .success, .message {
   border: 1px solid #ccc;
   padding: 10px;
-  color: #333; 
+  color: #333;
 }
 
 .success {
-  border-color: green; 
+  border-color: green;
 }
 
 .error {
-  border-color: red; 
+  border-color: red;
 }
 
 .warning {
-  border-color: yellow; 
+  border-color: yellow;
 }
+
 ```
 
 Vemos como `.message`, `.success`, `.error` y `.warning` tiene el mismo comportamiento que `%message-shared`, mientras que los estilos aplicados en `%equal-heights` no son colocados en el *css* final porque este no fue *extendido*.
@@ -230,20 +251,24 @@ aside[role="complementary"] {
 }
 ```
 
+Para procesar:
+
+![operador_img][operador]
+
 ```css
 /* css: operators.css */
 .container {
-  width: 100%; 
+  width: 100%;
 }
 
-article[role="main"] {
+article[role=main] {
   float: left;
-  width: 62.5%; 
+  width: 62.5%;
 }
 
-aside[role="complementary"] {
+aside[role=complementary] {
   float: right;
-  width: 31.25%; 
+  width: 31.25%;
 }
 ```
 
@@ -258,3 +283,8 @@ Existen muchos frameworks que emplean por defecto Sass, como Angular, para el ma
 * [Sass Tutorial - W3schools](https://www.w3schools.com/sass/)
 
 > Puede revisar los archivos del presente documento en el [repositorio](https://github.com/gcmurillo/sass)
+
+[var]: localhost
+[scope]: localhost
+[extend]: localhost
+[operador]: localhost

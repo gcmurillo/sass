@@ -1,12 +1,15 @@
 .container {
-  width: 100%; }
+  width: 100%;
+}
 
-article[role="main"] {
+article[role=main] {
   float: left;
-  width: 62.5%; }
+  width: 62.5%;
+}
 
-aside[role="complementary"] {
+aside[role=complementary] {
   float: right;
-  width: 31.25%; }
+  width: 31.25%;
+}
 
 /*# sourceMappingURL=operators.css.map */

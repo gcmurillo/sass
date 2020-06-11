@@ -1,16 +1,20 @@
 /* This CSS will print because %message-shared is extended. */
-.message, .success, .error, .warning {
+.warning, .error, .success, .message {
   border: 1px solid #ccc;
   padding: 10px;
-  color: #333; }
+  color: #333;
+}
 
 .success {
-  border-color: green; }
+  border-color: green;
+}
 
 .error {
-  border-color: red; }
+  border-color: red;
+}
 
 .warning {
-  border-color: yellow; }
+  border-color: yellow;
+}
 
 /*# sourceMappingURL=extend.css.map */
