@@ -45,7 +45,7 @@ $ sass --watch var.scss var.css
 ```
 El flag `--watch` permitirá que cada vez que se modifique el archivo *scss* se genere un nuevo *css* automaticamente. Se presentará una pantalla como esta:
 
-![imagen_var][var]
+![imagen_var](https://github.com/gcmurillo/sass/blob/master/capturas/var1.JPG)
 
 ```css
 /* css: archivo var.css*/
@@ -284,7 +284,7 @@ Existen muchos frameworks que emplean por defecto Sass, como Angular, para el ma
 
 > Puede revisar los archivos del presente documento en el [repositorio](https://github.com/gcmurillo/sass)
 
-[var]: localhost
+[var]: https://github.com/gcmurillo/sass/blob/master/capturas/var1.JPG
 [scope]: localhost
 [extend]: localhost
 [operador]: localhost
